@@ -7,16 +7,17 @@
 
 function AppChild(props) {
     // 자바스크립트
-    // props 가 뭐냐
-    // 부모가 자식한테 데이터를 주는 방법은 props를 이용하면 된다.
+    // props 란?
+    // 부모가 자식한테 데이터를 주는 방법: props를 이용하면 된다.
     // 부모가 자식에게 props를 통해 데이터를 줄 수 있음
     // 준 데이터들은 props에 저장되어 있음
     console.log("AppChiled 렌더링", props);
 
-    // 리턴
+    // 리턴 (jsx)
     return (
         <div>
             <h2>AppChild</h2>
+            {/* App.js 에서 준 childTitle 변수 적용시키는 방법 */}
             <p>{props.title}</p>
         </div>
     );
